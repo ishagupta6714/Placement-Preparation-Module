@@ -20,3 +20,14 @@ class Solution {
         return -1;
     }
 }
+
+// using XOR
+public static int findSingleElement(int nums[]) {
+            int n = nums.length;
+            int elem = 0;
+            for (int i = 0; i < n; i++) {
+                elem = elem ^ nums[i];
+        }
+        
+        return elem;
+    }
